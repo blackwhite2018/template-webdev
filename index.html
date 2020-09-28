@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="app/css/index.css">
+  <link rel="stylesheet" href="app/css/reset.css">
+</head>
+
+<!--
+  Если ты зашёл сюда - беги! Это был до ужаса убитый макет!!!
+-->
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-container">
+        <nav class="navbar">
+          <ul class="menu navbar__menu">
+            <li class="menu__item menu__item--active"><a href="/">About</a></li>
+            <li class="menu__item"><a href="/">Syllabus</a></li>
+            <a href="/" class="logo-container">
+              <img src="app/img/logo.svg" class="logo" alt="webdev logo">
+            </a>
+            <li class="menu__item"><a href="/">Projects</a></li>
+            <li class="menu__item"><a href="/">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-container header__header-container">
+        <h1 class="header-container__title">your life is webdev</h1>
+        <p class="header-container__text">
+          Whatever the approach to development may be, the final program must satisfy some fundamental properties
+        </p>
+        <input type="button" class="btn btn-primary" value="get started">
+      </div>
+      <div class="header-container">
+        <div class="social header-container__social">
+          <img src="app/img/social1.svg" class="social__item" alt="">
+          <img src="app/img/social2.svg" class="social__item" alt="">
+          <img src="app/img/social3.svg" class="social__item" alt="">
+          <img src="app/img/social4.svg" class="social__item" alt="">
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main-container">
+        <div class="box">
+          <h2 class="box__title">Rappresent your idea with a smart Design</h2>
+          <p class="box__text">
+            Tasks accompanying and related to programming include: testing,
+            debugging, source code maintenance, <span class="text--weight">implementation of build systems</span>,
+            and management of derived artifacts, such as the machine code of
+            computer programs.
+          </p>
+          <input type="button" class="btn btn-primary" value="get started">
+        </div>
+        <div class="box box__content-image"></div>
+      </div>
+
+      <div class="main-container-fluid main-container-fluid--color--secondary">
+        <div class="box main-container-fluid__box">
+          <img src="app/img/icon.png" class="box__avatar" alt="">
+          <h3 class="box__caption">our community</h3>
+          <p class="box__text box__text--align--center">
+            A hacker is any skilled computer expert that uses their
+            technical knowledge to overcome a problem, but it can
+            also mean a security hacker in common language
+          </p>
+        </div>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="slide__img" src="app/img/slide1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="slide__img" src="app/img/slide2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="slide__img" src="app/img/slide1.jpg" alt="">
+            </div>
+          </div>
+          <div class="slider-controls">
+            <div class="swiper-button-next"></div>
+            <span class="slide-count"></span>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="box box__content-image--margin--right"></div>
+        <div class="box">
+          <h2 class="box__title">Implement right Code</h2>
+          <p class="box__text">
+            These might be considered part of the programming process, but
+            often the term software development is used for this larger
+            process with the term programming, implementation
+          </p>
+          <input type="button" class="btn btn-primary" value="learn more">
+        </div>
+      </div>
+
+      <div class="main-container-fluid main-container-fluid__background--2">
+        <div class="box box--width--secondary">
+          <h2 class="box__title box__title--color--secondary">sign up for our newsletter</h2>
+          <form action="" class="form box__form">
+            <input type="text" class="form__input" value="E-mail">
+            <button type="button" class="btn form__button-check">
+              <img src="./app/img/fa-check.svg" class="form__button--icon" alt="">
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="box main-container__box--margin-bottom">
+          <h2 class="box__title box__title--align--center">Download the App</h2>
+          <p class="box__text box__text--align--center">
+            Machine code was the language of early programs, written in the instruction
+            set of the particular machine, often in binary notation.
+          </p>
+          <form action="" class="form">
+            <div class="form-container">
+              <input type="button" class="form__button" value="apple store">
+              <button type="button" class="btn btn-icon">
+                <img src="./app/img/icon-btn-1.svg" class="form__button--icon--apple" alt="">
+              </button>
+            </div>
+            <div class="form-container">
+              <input type="button" class="form__button" value="play market">
+              <button type="button" class="btn btn-icon">
+                <img src="./app/img/icon-btn-2.svg" class="form__button--icon--android" alt="">
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <ul class="menu">
+        <li class="menu__item"><a href="/">Credits</a></li>
+        <li class="menu__item"><a href="/">Privacy</a></li>
+        <li class="menu__item"><a href="/">Our teams</a></li>
+      </ul>
+      <img src="./app/img/logo.svg" alt="" class="logo">
+      <p class="copyright">
+        by TonYem for RSS at 2020
+      </p>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    const sliderCount = document.querySelector('.slide-count');
+    swiper.on('slideChange', () => {
+      sliderCount.textContent = `${swiper.activeIndex + 1} / ${swiper.slides.length}`;
+    });
+  </script>
+</body>
+
+</html>
